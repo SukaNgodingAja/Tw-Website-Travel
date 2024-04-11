@@ -1,0 +1,609 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+
+    <!-- font 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- font 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taprom&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body class="font-pertama tracking-wider">
+    <!-- navbar -->
+    <header class="w-full py-8">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <!-- logo -->
+            <div class="">
+                <img src="../public/logo.svg" alt="" class="w-[110px] md:w-[140px]">
+            </div>
+            <!-- menu -->
+            <div class="">
+                <ul class="hidden md:flex capitalize gap-8">
+                    <li><a href="" class="hover:text-orange">beranda</a></li>
+                    <li><a href="" class="hover:text-orange">packages</a></li>
+                    <li><a href="" class="hover:text-orange">destinations</a></li>
+                    <li><a href="" class="hover:text-orange">about us</a></li>
+                    <li><a href="" class="hover:text-orange">services</a></li>
+                </ul>
+            </div>
+            <!-- login -->
+            <div class="hidden md:block">
+                <a href="" class="btn">Login</a>
+            </div>
+
+            <!-- mobile menu -->
+            <div id="navMobile" class="hidden transition-all duration-300">
+                <ul class="capitalize bg-white absolute h-[100vh] inset-0 py-20 flex flex-col gap-4 items-center z-50">
+                    <div class="">
+                        <img src="../public/logo.svg" alt="" class="w-[110px]">
+                    </div>
+
+                    <li><a href="" class="hover:text-orange">beranda</a></li>
+                    <li><a href="" class="hover:text-orange">packages</a></li>
+                    <li><a href="" class="hover:text-orange">destinations</a></li>
+                    <li><a href="" class="hover:text-orange">about us</a></li>
+                    <li><a href="" class="hover:text-orange">services</a></li>
+
+                    <div class="mt-12">
+                        <a href="" class="py-3 px-20 bg-orange text-white border rounded-md hover:bg-white hover:text-orange hover:border-orange">Login</a>
+                    </div>
+                </ul>
+            </div>
+
+            <div id="menuBurger" class="md:hidden cursor-pointer z-50 transition-all duration-300">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content 1 -->
+    <main>
+        <header class="w-full pt-14 pb-24 relative">
+            <div class="container mx-auto px-4">
+
+                <!-- text -->
+                <h1 class="hidden md:block font-bold capitalize text-[76px] absolute -left-[72px] bottom-52 -z-10 text-putih/80 -rotate-90">travelFun</h1>
+
+                <div class="w-full md:flex">
+                    <!-- kanan mobile -->
+                    <div class="w-full md:hidden mb-12">
+                        <div class="w-full h-[200px] overflow-hidden rounded-lg relative">
+                            <img src="../public/img/card1.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <!-- kiri -->
+                    <div id="utamaKiri" class="w-full md:w-1/2 mb-12 md:mb-0">
+                        <div class="flex gap-2 items-center mb-4">
+                            <i class="fa-solid fa-compass text-orange"></i>
+                            <p class="font-semibold capitalize text-sm text-hitam">let’s go around the world</p>
+                        </div>
+
+                        <h1 class="font-bold text-3xl capitalize text-hitam max-w-lg leading-tight mb-6 md:text-5xl">let’s travel now and <span class="text-orange font-kedua">visit new</span>, very beautiful places</h1>
+
+                        <p class="leading-relaxed text-hitam2 text-sm mb-12 capitalize">don’t delay, it’s time for you to travel around the world and discover other new andinteresting things.</p>
+
+                        <div class="flex gap-3">
+                            <button class="btn capitalize flex gap-2 justify-between items-center">
+                                explore now
+                                <i class="fa-solid fa-caret-right"></i>
+                            </button>
+
+                            <button class="btn-hitam capitalize flex gap-2 justify-between items-center">
+                                <span class="hidden md:block">packages</span>
+                                <i class="fa-solid fa-box-archive"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- kanan -->
+                    <div id="utamaKanan" class=" w-full md:w-1/2 relative hidden md:block ">
+                        <!-- img 1 -->
+                        <div class="w-[230px] h-[300px] rounded-lg border-[5px] border-white overflow-hidden absolute -top-5 left-20 ">
+                            <img src="../public/img/hero1.jpg " alt=" " class="w-full h-full object-cover ">
+                        </div>
+                        <!-- img 2 -->
+                        <div class="w-[200px] h-[230px] rounded-lg border-[5px] border-white overflow-hidden absolute left-32 -bottom-10 z-20 ">
+                            <img src="../public/img/hero2.jpg " alt=" " class="w-full h-full object-cover ">
+                        </div>
+                        <!-- img 3 -->
+                        <div class="w-[230px] h-[300px] rounded-lg border-[5px] border-white overflow-hidden absolute bottom-5 right-0 z-10 ">
+                            <img src="../public/img/hero3.jpg " alt=" " class="w-full h-full object-cover ">
+                        </div>
+
+                        <!-- card 1 -->
+                        <div class="w-[165px] h-[70px] px-[5px] bg-white rounded-md shadow-lg flex items-center gap-2 absolute right-9 z-30 ">
+                            <div class="w-[70px] h-[50px] overflow-hidden rounded-md ">
+                                <img src="../public/img/card1.jpg " alt=" " class="w-full h-full object-cover ">
+                            </div>
+                            <div class="flex flex-col ">
+                                <h4 class="font-semibold text-sm capitalize ">travel plan</h4>
+                                <p class="text-[10px] capitalize ">plan first before traveling </p>
+                            </div>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div class="w-[135px] h-[105px] bg-white py-2 px-3 rounded-md shadow-lg flex flex-col items-start justify-center absolute z-30 -bottom-5 left-10 capitalize ">
+                            <div class="flex gap-4 mb-2 ">
+                                <i class="fa-solid fa-chart-simple text-orange "></i>
+                                <p class="font-normal text-xs ">best place</p>
+                            </div>
+                            <div class="flex gap-4 mb-2 ">
+                                <i class="fa-solid fa-camera text-orange "></i>
+                                <p class="font-normal text-xs ">best photo</p>
+                            </div>
+                            <div class="flex gap-4 mb-2 ">
+                                <i class="fa-solid fa-location-crosshairs text-orange "></i>
+                                <p class="font-normal text-xs ">best location</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </header>
+    </main>
+
+    <!-- content 2 -->
+    <main>
+        <!-- content 1 -->
+        <header class="w-full py-20 relative ">
+            <!-- titik -->
+            <div class="absolute bottom-4 left-10 ">
+                <img src="../public/titik.svg " alt=" " class="w-[110px] md:w-[180px] ">
+            </div>
+
+            <div class="container mx-auto px-4 ">
+                <div class="w-full flex justify-between ">
+                    <!-- kiri -->
+                    <div id="keduaKiri" class="w-full md:w-1/2 relative hidden md:block ">
+                        <!-- img 1 -->
+                        <div class="w-[350px] h-[300px] overflow-hidden border-[5px] border-white rounded-lg absolute ">
+                            <img src="../public/img/hero4.jpg " alt=" " class="w-full h-full object-cover ">
+                        </div>
+                        <!-- img 2 -->
+                        <div class="w-[350px] h-[300px] overflow-hidden border-[5px] border-white rounded-lg absolute top-32 right-5 shadow-lg ">
+                            <img src="../public/img/hero5.jpg " alt=" " class="w-full h-full object-cover ">
+                        </div>
+                    </div>
+                    <!-- kanan -->
+                    <div id="keduaKanan" class="w-full md:w-1/2 md:pl-10 ">
+                        <h2 class="font-bold capitalize text-xl md:text-3xl text-hitam mb-12 ">things you need to prepare <span class="text-orange ">before traveling</span></h2>
+                        <!-- text 1 -->
+                        <div class="text-hitam mb-4 ">
+                            <div class="flex items-center gap-3 mb-2 ">
+                                <h3 class="text-xl md:text-2xl font-normal capitalize ">01.</h3>
+                                <h3 class="text-xl md:text-2xl font-semibold capitalize ">best food</h3>
+                            </div>
+                            <p class="font-light capitalize text-hitam2 max-w-64 ml-12 ">we provide the best quality food to our customers.</p>
+                        </div>
+                        <!-- text 2 -->
+                        <div class="text-hitam mb-4 ">
+                            <div class="flex items-center gap-3 mb-2 ">
+                                <h3 class="text-xl md:text-2xl font-normal capitalize ">02.</h3>
+                                <h3 class="text-xl md:text-2xl font-semibold capitalize ">best travel plan</h3>
+                            </div>
+                            <p class="font-light capitalize text-hitam2 max-w-64 ml-12 ">we provide the best travel packages for you.</p>
+                        </div>
+                        <!-- text 3 -->
+                        <div class="text-hitam mb-4 ">
+                            <div class="flex items-center gap-3 mb-2 ">
+                                <h3 class="text-xl md:text-2xl font-normal capitalize ">03.</h3>
+                                <h3 class="text-xl md:text-2xl font-semibold capitalize ">best flights</h3>
+                            </div>
+                            <p class="font-light capitalize text-hitam2 max-w-64 ml-12 ">we provide the best flying exoperience from our trusted airline.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- content 2 -->
+        <header class="w-full py-20 ">
+            <div class="container mx-auto px-4 ">
+                <!-- header -->
+                <div class="flex justify-between items-center mb-12 ">
+                    <!-- bagian kiri -->
+                    <div id=" " class="w-full md:w-1/2 ">
+                        <h2 class="font-bold capitalize text-xl md:text-3xl text-hitam mb-12 max-w-md ">populer <span class="text-orange ">destination</span> travelFun
+                        </h2>
+                    </div>
+                    <!-- bagian kanan -->
+                    <div class="w-full md:w-1/2 flex gap-2 justify-end ">
+                        <div class="w-8 h-8 bg-hitam2/70 rounded-full flex justify-center items-center cursor-pointer hover:bg-hitam2/35 ">
+                            <i class="fa-solid fa-angle-left text-white "></i>
+                        </div>
+                        <div class="w-8 h-8 bg-orange rounded-full flex justify-center items-center cursor-pointer hover:bg-orange/50 ">
+                            <i class="fa-solid fa-angle-right text-white "></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- content -->
+                <div class="w-full md:flex gap-4 ">
+                    <!-- card 1 -->
+                    <div class="w-full md:w-1/4 relative mb-24 md:mb-0 ">
+                        <!-- img card -->
+                        <div class="h-[300px] mb-4 md:mb-0 md:h-[320px] overflow-hidden rounded-md group ">
+                            <img src="../public/img/card6.jpg " alt=" " class="w-full h-full object-cover group-hover:scale-125 transition-all duration-500 ">
+                        </div>
+                        <!-- card desc -->
+                        <div class="w-full flex justify-center ">
+                            <div class="w-[90%] bg-white rounded-md px-4 py-5 shadow-lg absolute -bottom-16 ">
+                                <!-- atas -->
+                                <div class="flex justify-between mb-2 ">
+                                    <div class="flex gap-2 items-center ">
+                                        <i class="fa-solid fa-location-crosshairs text-orange "></i>
+                                        <p class="text-xs font-medium capitalize ">bali</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center ">
+                                        <i class="fa-solid fa-star text-yellow-500 "></i>
+                                        <p class="text-sm font-medium ">4.5</p>
+                                    </div>
+                                </div>
+                                <!-- tengah -->
+                                <h2 class="font-bold text-lg mb-4 capitalize text-hitam ">nusa dua</h2>
+                                <!-- bawah -->
+                                <div class="flex justify-between items-center ">
+                                    <p class="font-semibold text-lg capitalize text-hitam2 ">Rp. 500.000</p>
+
+                                    <div class="w-[40px] h-[40px] bg-orange rounded-full flex justify-center items-center hover:bg-white border shadow-md hover:border-orange hover:text-orange text-white cursor-pointer ">
+                                        <i class="fa-solid fa-angle-right "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="w-full md:w-1/4 relative mb-24 md:mb-0 ">
+                        <!-- img card -->
+                        <div class="h-[300px] mb-4 md:mb-0 md:h-[320px] overflow-hidden rounded-md group ">
+                            <img src="../public/img/card2.jpg " alt=" " class="w-full h-full object-cover group-hover:scale-125 transition-all duration-500 ">
+                        </div>
+                        <!-- card desc -->
+                        <div class="w-full flex justify-center ">
+                            <div class="w-[90%] bg-white rounded-md px-4 py-5 shadow-lg absolute -bottom-16 ">
+                                <!-- atas -->
+                                <div class="flex justify-between mb-2 ">
+                                    <div class="flex gap-2 items-center ">
+                                        <i class="fa-solid fa-location-crosshairs text-orange "></i>
+                                        <p class="text-xs font-medium capitalize ">Sulawasi utara</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center ">
+                                        <i class="fa-solid fa-star text-yellow-500 "></i>
+                                        <p class="text-sm font-medium ">4.5</p>
+                                    </div>
+                                </div>
+                                <!-- tengah -->
+                                <h2 class="font-bold text-lg mb-4 capitalize text-hitam ">taman bunaken</h2>
+                                <!-- bawah -->
+                                <div class="flex justify-between items-center ">
+                                    <p class="font-semibold text-lg capitalize text-hitam2 ">Rp. 700.000</p>
+
+                                    <div class="w-[40px] h-[40px] bg-orange rounded-full flex justify-center items-center hover:bg-white border shadow-md hover:border-orange hover:text-orange text-white cursor-pointer ">
+                                        <i class="fa-solid fa-angle-right "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="w-full md:w-1/4 relative mb-24 md:mb-0 ">
+                        <!-- img card -->
+                        <div class="h-[300px] mb-4 md:mb-0 md:h-[320px] overflow-hidden rounded-md group ">
+                            <img src="../public/img/card3.jpg " alt=" " class="w-full h-full object-cover group-hover:scale-125 transition-all duration-500 ">
+                        </div>
+                        <!-- card desc -->
+                        <div class="w-full flex justify-center ">
+                            <div class="w-[90%] bg-white rounded-md px-4 py-5 shadow-lg absolute -bottom-16 ">
+                                <!-- atas -->
+                                <div class="flex justify-between mb-2 ">
+                                    <div class="flex gap-2 items-center ">
+                                        <i class="fa-solid fa-location-crosshairs text-orange "></i>
+                                        <p class="text-xs font-medium capitalize ">lombok, NTB</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center ">
+                                        <i class="fa-solid fa-star text-yellow-500 "></i>
+                                        <p class="text-sm font-medium ">4.5</p>
+                                    </div>
+                                </div>
+                                <!-- tengah -->
+                                <h2 class="font-bold text-lg mb-4 capitalize text-hitam ">gunung rinjani</h2>
+                                <!-- bawah -->
+                                <div class="flex justify-between items-center ">
+                                    <p class="font-semibold text-lg capitalize text-hitam2 ">Rp. 600.000</p>
+
+                                    <div class="w-[40px] h-[40px] bg-orange rounded-full flex justify-center items-center hover:bg-white border shadow-md hover:border-orange hover:text-orange text-white cursor-pointer ">
+                                        <i class="fa-solid fa-angle-right "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div class="w-full md:w-1/4 relative mb-24 md:mb-0 ">
+                        <!-- img card -->
+                        <div class="h-[300px] mb-4 md:mb-0 md:h-[320px] overflow-hidden rounded-md group ">
+                            <img src="../public/img/card4.jpg " alt=" " class="w-full h-full object-cover group-hover:scale-125 transition-all duration-500 ">
+                        </div>
+                        <!-- card desc -->
+                        <div class="w-full flex justify-center ">
+                            <div class="w-[90%] bg-white rounded-md px-4 py-5 shadow-lg absolute -bottom-16 ">
+                                <!-- atas -->
+                                <div class="flex justify-between mb-2 ">
+                                    <div class="flex gap-2 items-center ">
+                                        <i class="fa-solid fa-location-crosshairs text-orange "></i>
+                                        <p class="text-xs font-medium capitalize ">sumatera utara</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center ">
+                                        <i class="fa-solid fa-star text-yellow-500 "></i>
+                                        <p class="text-sm font-medium ">4.5</p>
+                                    </div>
+                                </div>
+                                <!-- tengah -->
+                                <h2 class="font-bold text-lg mb-4 capitalize text-hitam ">danau toba</h2>
+                                <!-- bawah -->
+                                <div class="flex justify-between items-center ">
+                                    <p class="font-semibold text-lg capitalize text-hitam2 ">Rp. 800.000</p>
+
+                                    <div class="w-[40px] h-[40px] bg-orange rounded-full flex justify-center items-center hover:bg-white border shadow-md hover:border-orange hover:text-orange text-white cursor-pointer ">
+                                        <i class="fa-solid fa-angle-right "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- content 3 -->
+        <header class="w-full py-20 ">
+            <div class="container mx-auto px-4 ">
+                <!-- header -->
+                <div class="flex justify-between items-center mb-12 ">
+                    <!-- bagian kiri -->
+                    <div id=" " class="w-full md:w-1/2 ">
+                        <h2 class="font-bold capitalize text-xl md:text-3xl text-hitam mb-12 max-w-md ">nice place
+                            <span class="text-orange ">for you</span> to come
+                        </h2>
+                    </div>
+                    <!-- bagian kanan -->
+                    <div class="w-full md:w-1/2 flex gap-2 justify-end ">
+                        <div class="w-8 h-8 bg-hitam2/70 rounded-full flex justify-center items-center cursor-pointer hover:bg-hitam2/35 ">
+                            <i class="fa-solid fa-angle-left text-white "></i>
+                        </div>
+                        <div class="w-8 h-8 bg-orange rounded-full flex justify-center items-center cursor-pointer hover:bg-orange/50 ">
+                            <i class="fa-solid fa-angle-right text-white "></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- content -->
+                <div id=" " class="w-full md:flex gap-4 ">
+                    <!-- card 1 -->
+                    <div class="w-full md:w-1/3 mb-8 md:mb-0 ">
+                        <div class="w-full h-[260px] overflow-hidden rounded-md ">
+                            <img src="../public/img/camping.jpg " alt=" " class="w-full h-full object-cover ">
+                        </div>
+                        <div class="flex justify-between items-center my-4 ">
+                            <h3 class="font-bold capitalize text-2xl text-hitam ">camping</h3>
+                            <i class="fa-solid fa-heart text-red-500 "></i>
+                        </div>
+                        <div class="flex gap-2 items-center ">
+                            <i class="fa-solid fa-location-crosshairs text-orange "></i>
+                            <h3 class="text-xs font-medium capitalize ">lombok NTB</h3>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="w-full md:w-1/3 mb-8 md:mb-0 ">
+                        <div class="w-full h-[260px] overflow-hidden rounded-md ">
+                            <img src="../public/img/Scuba diving.jpg " alt=" " class="w-full h-full object-cover ">
+                        </div>
+                        <div class="flex justify-between items-center my-4 ">
+                            <h3 class="font-bold capitalize text-2xl text-hitam ">scuba diving</h3>
+                            <i class="fa-solid fa-heart text-red-500 "></i>
+                        </div>
+                        <div class="flex gap-2 items-center ">
+                            <i class="fa-solid fa-location-crosshairs text-orange "></i>
+                            <h3 class="text-xs font-medium capitalize ">Sulawesi utara</h3>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="w-full md:w-1/3 mb-8 md:mb-0 ">
+                        <div class="w-full h-[260px] overflow-hidden rounded-md ">
+                            <img src="../public/img/Trekking.jpg " alt=" " class="w-full h-full object-cover ">
+                        </div>
+                        <div class="flex justify-between items-center my-4 ">
+                            <h3 class="font-bold capitalize text-2xl text-hitam ">trekking</h3>
+                            <i class="fa-solid fa-heart text-red-500 "></i>
+                        </div>
+                        <div class="flex gap-2 items-center ">
+                            <i class="fa-solid fa-location-crosshairs text-orange "></i>
+                            <h3 class="text-xs font-medium capitalize ">sumatera utara</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- content 4 -->
+        <header class="w-full py-20 ">
+            <div class="container mx-auto px-4 ">
+                <!-- header -->
+                <header class="max-w-lg mx-auto mb-12 ">
+                    <h1 class="text-center text-xl font-bold md:text-3xl capitalize ">look for the latest news about your <span class="text-orange ">tourist destination</span></h1>
+                </header>
+                <!-- content -->
+                <div class="w-full md:flex gap-8 justify-between ">
+                    <!-- kiri -->
+                    <div class="w-full md:w-1/2 relative mb-24 md:mb-0 ">
+                        <!-- kiri img -->
+                        <div id=" " class="w-full h-[400px] overflow-hidden rounded-md ">
+                            <img src="../public/img/news1.jpg " alt=" ">
+                        </div>
+                        <!-- kiri card desc -->
+                        <div class="bg-white px-4 py-6 w-[95%] rounded-md shadow-md md:absolute md:-bottom-16 md:right-1/2 md:translate-x-1/2 ">
+                            <!-- atas -->
+                            <div class="flex justify-between items-center mb-4 text-xs font-medium ">
+                                <div class="flex gap-2 items-center ">
+                                    <div class="w-[28px] h-[28px] rounded-full overflow-hidden ">
+                                        <img src="../public/img/orang.jpg " alt=" " class="w-full h-full object-cover ">
+                                    </div>
+                                    <p class="capitalize text-sm font-normal ">by admin</p>
+                                </div>
+                                <p class="capitalize ">10 february, 2024</p>
+                            </div>
+                            <!-- tengah -->
+                            <h2 class="font-bold text-lg md:text-xl capitalize mb-4 ">city views at nigth with a veriety of entertainment
+                            </h2>
+                            <p class="text-hitam2 text-sm mb-6 ">Enjoy your night until morning in this city by sharing local entertainment and food</p>
+                            <!-- bawah -->
+                            <a href=" " class="text-sm font-medium text-orange hover:border hover:border-orange hover:rounded-md hover:py-2 hover:px-6 transition-all duration-500 capitalize ">read more</a>
+                        </div>
+                    </div>
+                    <!-- kanan -->
+                    <div class="w-full md:w-1/2 flex flex-col ">
+                        <!-- card col 1 -->
+                        <div id=" " class="flex flex-row gap-4 mb-4 ">
+                            <div class="w-[300px] h-[140px] overflow-hidden rounded-md ">
+                                <img src="../public/img/news2.jpg " alt=" " class="w-full h-full object-cover ">
+                            </div>
+                            <div class="capitalize ">
+                                <h3 class="font-semibold text-slate-800 mb-4 ">Enjoy the sensation on top of a cool mountain with beautiful</h3>
+                                <p class="text-hitam2 text-sm mb-6 ">09 February, 2024</p>
+                                <a href=" " class="text-xs font-medium text-orange hover:border hover:border-orange hover:rounded-md hover:py-2 hover:px-6 transition-all duration-300 ">Read More</a>
+                            </div>
+                        </div>
+
+                        <!-- card col 2 -->
+                        <div id="limaCard2 " class="flex flex-row gap-4 mb-4 ">
+                            <div class="w-[300px] h-[140px] overflow-hidden rounded-md ">
+                                <img src="../public/img/news3.jpg " alt=" " class="w-full h-full object-cover ">
+                            </div>
+                            <div class="capitalize ">
+                                <h3 class="font-semibold text-slate-800 mb-4 ">Enjoy the sensation on top of a cool mountain with beautiful</h3>
+                                <p class="text-hitam2 text-sm mb-6 ">09 February, 2024</p>
+                                <a href=" " class="text-xs font-medium text-orange hover:border hover:border-orange hover:rounded-md hover:py-2 hover:px-6 transition-all duration-300 ">Read More</a>
+                            </div>
+                        </div>
+
+                        <!-- card col 3 -->
+                        <div id="limaCard3 " class="flex flex-row gap-4 mb-4 ">
+                            <div class="w-[300px] h-[140px] overflow-hidden rounded-md ">
+                                <img src="../public/img/news4.jpg " alt=" " class="w-full h-full object-cover ">
+                            </div>
+                            <div class="capitalize ">
+                                <h3 class="font-semibold text-slate-800 mb-4 ">Enjoy the sensation on top of a cool mountain with beautiful</h3>
+                                <p class="text-hitam2 text-sm mb-6 ">09 February, 2024</p>
+                                <a href=" " class="text-xs font-medium text-orange hover:border hover:border-orange hover:rounded-md hover:py-2 hover:px-6 transition-all duration-300 ">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="w-full bg-orange2 pt-20 pb-12 mt-10 ">
+            <div class="container mx-auto px-4 ">
+                <div class="flex flex-col md:flex-row justify-between ">
+                    <!-- content kiri -->
+                    <div class="w-full md:w-1/2 mb-12 md:mb-0 text-center md:text-left ">
+                        <div class="mb-6 ">
+                            <img src="../public/logo2.svg " alt=" " class="w-[110px] md:w-[140px] mx-auto md:mx-0 ">
+                        </div>
+                        <p class="text-xs text-white max-w-xs leading-relaxed ">don’t delay, it’s time for you to travel around the world and discover other new andinteresting things.</p>
+                    </div>
+                    <!-- content kanan -->
+                    <div class="w-full md:w-1/2 flex flex-col justify-end items-end mb-12 ">
+                        <h2 class="font-bold text-xl mb-4 capitalize text-center md:text-right text-white ">stay update to our newslutter</h2>
+                        <form action=" " method="post ">
+                            <div class=" ">
+                                <input type="email " class="w-full md:w-[250px] rounded-md py-3 px-4 text-hitam outline-none text-sm mb-4 " placeholder="Masukkan Email ">
+
+                                <button type="submit " class="btn-hitam border-orange2 hover:border-white w-full md:w-[150px] ">Subcribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- content bawah -->
+                <div class="py-4 px-8 bg-hitam mt-12 rounded-md flex flex-col md:flex-row items-center w-full md:h-[110px] justify-between ">
+                    <h2 class="text-white text-sm font-normal mb-6 text-center md:text-left md:mb-0 capitalize ">dibuat oleh <span class="font-bold hover:text-orange cursor-pointer
+                        ">SukaNgodingAja</span>, menggunakan Tailwind Css Dan Js. <span class="font-bold hover:text-orange cursor-pointer ">@2024</span></h2>
+
+                    <!-- sosial media -->
+                    <div class="flex gap-2 justify-center md:justify-end ">
+                        <svg class="w-4 h-4 fill-white hover:fill-orange cursor-pointer " role="img " viewBox="0 0 24 24 " xmlns="http://www.w3.org/2000/svg "><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978
+                        5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287
+                        1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z "/></svg>
+
+                        <svg class="w-4 h-4 fill-white " role="img " viewBox="0 0 24 24 " xmlns="http://www.w3.org/2000/svg "><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243
+                        6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z "/></svg>
+
+                        <svg class="w-4 h-4 fill-white " role="img " viewBox="0 0 24 24 " xmlns="http://www.w3.org/2000/svg "><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017
+                        3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818
+                        12l-6.273 3.568z "/></svg>
+
+                        <svg class="w-4 h-4 fill-white " role="img " viewBox="0 0 24 24 " xmlns="http://www.w3.org/2000/svg "><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075
+                        1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295
+                        1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982
+                        1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814
+                        1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169
+                        2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953
+                        5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8
+                        12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077 "/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/main.js "></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+
+        });
+
+        ScrollReveal().reveal('#utamaKiri', {
+            delay: 200,
+            origin: 'left'
+        });
+        ScrollReveal().reveal('#utamaKanan', {
+            delay: 200,
+            origin: 'right'
+        });
+        ScrollReveal().reveal('#keduaKiri', {
+            delay: 200,
+            origin: 'left'
+        });
+        ScrollReveal().reveal('#keduaKanan', {
+            delay: 200,
+            origin: 'right'
+        });
+    </script>
+</body>
+
+</html>
